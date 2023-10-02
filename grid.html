@@ -1,0 +1,92 @@
+<head>
+<meta name="viewport" content="width=device-width">
+<title>Final Project Minesweeper</title>
+<link href="main.css" rel="stylesheet">
+<script src="model.js"></script>
+<script src="view.js"></script>
+</head>
+
+<body onload="generateGrid();">
+<h1>Minesweeper!</h1>
+
+<div id="setupDiv">
+
+Rows:
+<input id="gridRows" type="text" size="5" value="10"></input>
+
+Columns:
+<input id="gridCols" type="text" size="5" value="10"></input>
+
+<br>
+Mines:
+<select id="mineChoice">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12"selected>12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+	<option value="32">32</option>
+	<option value="33">33</option>
+	<option value="34">34</option>
+	<option value="35">35</option>
+	<option value="36">36</option>
+	<option value="37">37</option>
+	<option value="38">38</option>
+	<option value="39">39</option>
+	<option value="40">40</option>
+	<option value="41">41</option>
+	<option value="42">42</option>
+	<option value="43">43</option>
+	<option value="44">44</option>
+	<option value="45">45</option>
+	<option value="46">46</option>
+	<option value="47">47</option>
+	<option value="48">48</option>
+	<option value="49">49</option>
+	<option value="50">50</option>
+</select>
+
+<button onclick="generateGrid()">Create</button>
+<button onclick="loadState()">Load Game</button>
+</div>
+
+<div id="flagsDiv"></div>
+<canvas id="smileyFace" width="32" height="32"></canvas>
+<canvas id="gameOver" width="320" height="32"></canvas>
+<div id="gridDiv"> </div>
+
+<br>
+<br>
+<audio id="Music" loop><source src="fx/Music.mp3" type="audio/mpeg"></audio> 
+<audio id="Explosion"><source src="fx/Explosion.mp3" type="audio/mpeg"></audio>
+<audio id="Flag"><source src="fx/8bitSplat.mp3" type="audio/mpeg"></audio>
+<audio id="Win"><source src="fx/win.mp3" type="audio/mpeg"></audio>
+<audio id="Lose"><source src="fx/lose.mp3" type="audio/mpeg"></audio>
+</body>
+</html>

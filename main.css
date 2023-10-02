@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: Ariel, Helvetica, sans-serif;
+	color: black;
+}
+
+p {
+  font-family: Ariel, Helvetica, sans-serif;
+	color: black;
+  font-size: 16px;
+}
+
+#p2 {
+  font-family: Ariel, Helvetica, sans-serif;
+	color: black;
+  font-size: 12px;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  background-color:#c0c0c0;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+#playMinesweeper {
+  border: none;
+  border-radius: 12px;
+  background-color: lightgreen;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: lightsalmon;
+}
+#playMinesweeper:hover {
+  background-color: green;
+  color: white;
+}
+#documentation {
+  border: none;
+  border-radius: 12px;
+  background-color: lightgreen;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: lightsalmon;
+}
+#documentation:hover {
+  background-color: green;
+  color: white;
+}
+
+#flagsDiv {
+  width: 72px;
+  float: left;
+}
+
